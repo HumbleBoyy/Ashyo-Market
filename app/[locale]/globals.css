@@ -13,26 +13,26 @@
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
-    src: url('../assets/fonts/roboto-v47-latin-regular.woff2') format('woff2');
+    src: url('../../assets/fonts/roboto-v47-latin-regular.woff2') format('woff2');
   }
   @font-face {
     font-display: swap; 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 600;
-    src: url('../assets/fonts/roboto-v47-latin-600.woff2') format('woff2'); 
+    src: url('../../assets/fonts/roboto-v47-latin-600.woff2') format('woff2'); 
   }
   @font-face {
     font-display: swap;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
-    src: url('../assets/fonts/roboto-v47-latin-700.woff2') format('woff2');
+    src: url('../../assets/fonts/roboto-v47-latin-700.woff2') format('woff2');
   }
   @font-face {
     font-display: swap; 
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
-    src: url('../assets/fonts/roboto-v47-latin-900.woff2') format('woff2'); 
+    src: url('../../assets/fonts/roboto-v47-latin-900.woff2') format('woff2'); 
   }

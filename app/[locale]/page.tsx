@@ -1,12 +1,12 @@
 import Header from '@/modules/Header'
+import React from 'react'
 
-
-const Home = () => {
+const page = () => {
   return (
     <>
-        <Header/>
+      <Header/>
     </>
   )
 }
 
-export default Home
+export default page
