@@ -2,6 +2,7 @@ import {NextIntlClientProvider, hasLocale} from 'next-intl';
 import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import "./globals.css"
+import Header from '@/modules/Header';
 export default async function LocaleLayout({
   children,
   params
@@ -21,7 +22,10 @@ export default async function LocaleLayout({
             <title>Ashyo Market </title>
         </head>
       <body>
-        <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <NextIntlClientProvider>
+        <Header/>
+          {children}
+        </NextIntlClientProvider>
       </body>
     </html>
   );
