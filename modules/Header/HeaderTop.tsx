@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl"
 
 
 const HeaderTop = () => {
-  const t = useTranslations('HeaderTop')
+  const t = useTranslations('Header')
   const navList:HeaderTopTypes[] = [
     {
        id:1,

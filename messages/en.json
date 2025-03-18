@@ -3,6 +3,8 @@
       "cityName": "Tashkent",
       "about": "About Us",
       "products":"Products",
-      "contact":"Contacts"
+      "contact":"Contacts",
+      "category":"Категория",
+      "search":"Что Вы ищете?"
     }
 }

@@ -1,8 +1,10 @@
 {
-    "HeaderTop": {
+    "Header": {
         "cityName": "Ташкент",
         "about": "О нас",
         "products":"Продукты",
-        "contact":"Контакты"
+        "contact":"Контакты",
+        "category":"Category",
+        "search":"What are you looking for?"
       }
 }
