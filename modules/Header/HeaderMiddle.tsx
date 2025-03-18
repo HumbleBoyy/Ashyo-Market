@@ -1,4 +1,4 @@
-import { ArrowDownIcon, LibraIcon, LikedIcon, MainLogo, SearchIcon } from "@/assets"
+import { ArrowDownIcon, LibraIcon, LikedIcon, MainLogo, SearchIcon, ShoppingBagIcon, UserIcon } from "@/assets"
 import CustomButton from "@/components/CustomButton"
 import { Link } from "@/i18n/navigation"
 import { useTranslations } from "next-intl"
@@ -23,11 +23,17 @@ const t = useTranslations('Header')
           </CustomButton>
         </div>
         <div className="flex items-center gap-[10px]">
-          <CustomButton extraClass="bg-[#EBEFF3] !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
+          <CustomButton bage={10} extraClass="bg-[#EBEFF3] cursor-pointer !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
              <LibraIcon/>
           </CustomButton>
-          <CustomButton extraClass="bg-[#EBEFF3] !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
+          <CustomButton bage={20} extraClass="bg-[#EBEFF3] cursor-pointer !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
              <LikedIcon/>
+          </CustomButton>
+          <CustomButton bage={30} extraClass="bg-[#EBEFF3] cursor-pointer !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
+             <ShoppingBagIcon/>
+          </CustomButton>
+          <CustomButton extraClass="bg-[#EBEFF3] cursor-pointer !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
+             <UserIcon/>
           </CustomButton>
         </div>
       </div>
