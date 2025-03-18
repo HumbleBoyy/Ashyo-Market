@@ -1,4 +1,5 @@
 import { LocationIcon } from "@/assets"
+import LangConfig from "@/components/LangConfig"
 import { HeaderTopTypes } from "@/types/HeaderType"
 import Link from "next/link"
 
@@ -39,7 +40,7 @@ const HeaderTop = () => {
 
             <div className="flex items-center gap-[25px]">
                <Link className="text-[#545D6A] text-[14px] hover:text-[#134E9B] duration-300 font-semibold" href={"tel:+998711234567"}>+998 (71) 123-45-67</Link>
-            
+            <LangConfig/>
             </div>
         </div>
     </div>
