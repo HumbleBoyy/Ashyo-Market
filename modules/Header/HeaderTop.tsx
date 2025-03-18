@@ -32,7 +32,7 @@ const HeaderTop = () => {
     },
   ]
   return (
-    <div className='bg-[#EBEFF3] w-full p-5'>
+    <div className='bg-[#EBEFF3] w-full p-5 hidden sm:block'>
         <div className="containers flex justify-between items-center">
             <nav className=" flex items-center gap-5">
               {navList.map((item:HeaderTopTypes) => <Link className="flex items-center gap-1 text-[14px] hover:text-[#134E9B] duration-300 text-[#545D6A]" href={item.path} key={item.id}><span>{item.icon  && item.icon}</span> {item.title}</Link>)}
@@ -40,7 +40,7 @@ const HeaderTop = () => {
 
             <div className="flex items-center gap-[25px]">
                <Link className="text-[#545D6A] text-[14px] hover:text-[#134E9B] duration-300 font-semibold" href={"tel:+998711234567"}>+998 (71) 123-45-67</Link>
-            <LangConfig/>
+               <LangConfig/>
             </div>
         </div>
     </div>
