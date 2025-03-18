@@ -2,14 +2,23 @@
 import { ArrowDownIcon } from "@/assets";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import {Popover, PopoverTrigger, PopoverContent} from "@heroui/popover";
-import { useState } from "react";
+import { getCookie } from "cookies-next/client";
+import { useEffect, useState } from "react";
+
 const LangConfig = () => {
     const [lang, setLang] = useState<"uz" | "en" | "ru">("uz")
     const router = useRouter()
     const pathname = usePathname()
+
+    useEffect(()=> {
+        const cookieLang = getCookie("NEXT_LOCALE") as "uz" | "en" | "ru" | undefined;
+        if(cookieLang){
+          setLang(cookieLang)
+        }
+    },[])
     
     const changeLang = (value:"uz" | "en" | "ru") => {
-      setLang(value)
+       setLang(value)
        router.push(pathname, {locale: lang})
     }
   return (
