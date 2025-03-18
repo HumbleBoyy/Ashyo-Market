@@ -1,33 +1,36 @@
 import { LocationIcon } from "@/assets"
 import LangConfig from "@/components/LangConfig"
+import { Link } from "@/i18n/navigation"
 import { HeaderTopTypes } from "@/types/HeaderType"
-import Link from "next/link"
+import { useTranslations } from "next-intl"
+
 
 
 const HeaderTop = () => {
+  const t = useTranslations('HeaderTop')
   const navList:HeaderTopTypes[] = [
     {
        id:1,
        icon:<LocationIcon/>,
-       title:"Tashkent",
+       title:t("cityName"),
        path:"/"
     },
     {
       id:2,
       icon:null,
-      title:"About Us",
+      title:t("about"),
       path:"/aboutus"
     },
     {
       id:3,
       icon:null,
-      title:"Products",
+      title:t("products"),
       path:"/products"
     },
     {
         id:4,
         icon:null,
-        title:"Contacts",
+        title:t("contact"),
         path:"/contacts"
     },
   ]
