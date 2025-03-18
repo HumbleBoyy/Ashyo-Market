@@ -19,7 +19,7 @@ const LangConfig = () => {
     
     const changeLang = (value:"uz" | "en" | "ru") => {
        setLang(value)
-       router.push(pathname, {locale: lang})
+       router.push(pathname, {locale: value})
     }
   return (
     <Popover placement="bottom" showArrow={true}>
