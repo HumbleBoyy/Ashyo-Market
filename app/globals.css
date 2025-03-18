@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+*{
+    box-sizing: border-box;
+}
 .containers{
     max-width: 1185px;
     margin:  0 auto;
