@@ -1,4 +1,4 @@
-export const SearchIcon = () => {
+export const LocationIcon = () => {
     return(
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M8 8.66406C9.10457 8.66406 10 7.76863 10 6.66406C10 5.55949 9.10457 4.66406 8 4.66406C6.89543 4.66406 6 5.55949 6 6.66406C6 7.76863 6.89543 8.66406 8 8.66406Z" stroke="#545D6A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>

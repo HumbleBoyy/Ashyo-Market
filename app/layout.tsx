@@ -18,9 +18,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <thead>
+      {/* <thead>
          <title>Ashyo</title>
-      </thead>
+      </thead> */}
       <body  className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>

@@ -1,10 +1,11 @@
-import React from 'react'
+import Header from '@/modules/Header'
+
 
 const Home = () => {
   return (
-    <div>
-       Hello
-    </div>
+    <>
+        <Header/>
+    </>
   )
 }
 
