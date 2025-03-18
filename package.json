@@ -12,6 +12,7 @@
     "@heroui/popover": "^2.3.16",
     "axios": "^1.8.3",
     "next": "15.2.2",
+    "next-intl": "^4.0.2",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
