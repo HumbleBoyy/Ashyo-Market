@@ -19,6 +19,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
         <head>
+            <link rel="icon" href="./MainLogo.svg" />
             <title>Ashyo Market </title>
         </head>
       <body>
@@ -28,5 +29,5 @@ export default async function LocaleLayout({
         </NextIntlClientProvider>
       </body>
     </html>
-  );
+  )
 }
