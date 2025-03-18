@@ -33,9 +33,9 @@ const HeaderTop = () => {
   return (
     <div className='bg-[#EBEFF3] w-full p-5'>
         <div className="containers flex justify-between items-center">
-            <div className=" flex items-center gap-5">
-              {navList.map((item:HeaderTopTypes) => <Link className="flex items-center gap-1 text-[#545D6A]" href={item.path} key={item.id}>{item.icon  && item.icon} {item.title}</Link>)}
-            </div>
+            <nav className=" flex items-center gap-5">
+              {navList.map((item:HeaderTopTypes) => <Link className="flex items-center gap-1 text-[#545D6A]" href={item.path} key={item.id}><span>{item.icon  && item.icon}</span> {item.title}</Link>)}
+            </nav>
         </div>
     </div>
   )
