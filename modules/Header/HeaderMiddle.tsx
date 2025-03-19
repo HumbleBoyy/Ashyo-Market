@@ -1,5 +1,6 @@
 import { ArrowDownIcon, LibraIcon, LikedIcon, MainLogo, SearchIcon, ShoppingBagIcon, UserIcon } from "@/assets"
 import CustomButton from "@/components/CustomButton"
+import CustomInput from "@/components/CustomInput"
 import { Link } from "@/i18n/navigation"
 import { useTranslations } from "next-intl"
 
@@ -17,7 +18,7 @@ const t = useTranslations('Header')
           {t("category")}
         </CustomButton>
         <div className="flex items-center w-[518px] h-[53px] bg-[#EBEFF3] rounded-[6px]">
-          <input type="text" placeholder={t("search")} className="w-full px-5 outline-none text-[15px] text-[#000000]"/>
+          <CustomInput type={"text"} placeholder={t("search")}/>
           <CustomButton extraClass="rounded-l-none text-white h-[53px] cursor-pointer">
              <SearchIcon/>
           </CustomButton>

@@ -1,10 +1,9 @@
-import React from 'react'
+import { InputType } from '@/types/InputType'
+import React, { FC } from 'react'
 
-const CustomInput = () => {
+const CustomInput:FC<InputType> = ({type,onChange, placeholder, extraClass, name, value}) => {
   return (
-    <div>
-      
-    </div>
+    <input type={type} onChange={onChange} placeholder={placeholder} name={name} value={value} className={`${extraClass} w-full px-5 outline-none text-[15px] text-[#000000]`}/>
   )
 }
 
