@@ -37,6 +37,9 @@
     src: url('../../assets/fonts/roboto-v47-latin-900.woff2') format('woff2'); 
   }
 
+.searchDivsmall{
+    display: none;
+}
   @media (max-width:990px) {
     .searchDiv{
       display: none;
