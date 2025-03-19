@@ -9,14 +9,15 @@ const HeaderMiddle = () => {
 const t = useTranslations('Header')
   return (
     <div className='containers flex items-center justify-between py-2'>
-      <Link href={"/"} className="flex items-center">
-       <MainLogo/>
-       <strong className="text-[#134E9B] text-[36px] font-black">Ashyo</strong>
-      </Link>
       <div className="flex items-center gap-[15px]">
+        <Link href={"/"} className="flex items-center">
+         <MainLogo/>
+         <strong className="text-[#134E9B] text-[36px] font-black">Ashyo</strong>
+        </Link>
+      </div>
        <HeaderSearch/>
        <HeaderNotification/>
-      </div>
+    
     </div>
   )
 }
