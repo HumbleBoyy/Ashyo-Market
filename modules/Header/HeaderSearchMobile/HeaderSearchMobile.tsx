@@ -6,7 +6,7 @@ import { useTranslations } from 'next-intl'
 const HeaderSearchMobile = () => {
   const t = useTranslations('Header')
   return (
-    <div className="flex gap-2 items-center justify-center searchDivsmall">
+    <div className="flex gap-1 items-center justify-center searchDivsmall">
         <CustomButton extraClass="text-white cursor-pointer mobileSearchBtn" icon={<ArrowDownIcon/>} iconPosition={"right"}>
         {t("category")}
         </CustomButton>

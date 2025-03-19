@@ -58,3 +58,9 @@
      width: 100%;
   }
 }
+
+@media (max-width:350px) {
+  .phoneNumberMobile{
+     display: none;
+  }
+}
