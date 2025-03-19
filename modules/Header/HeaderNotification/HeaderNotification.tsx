@@ -26,7 +26,7 @@ const HeaderNotification = () => {
         }
     ]
   return (
-    <div className="flex items-center gap-[10px]">
+    <div className="items-center gap-[5px] hidden sm:flex">
         {actionList.map((item:HeaderNotificationType)=> (
             <CustomButton key={item.id} bage={item.bage} extraClass="bg-[#EBEFF3] cursor-pointer !w-[60px] !h-[50px] !p-0 text-[#545D6A] text-center">
               {item.icon}

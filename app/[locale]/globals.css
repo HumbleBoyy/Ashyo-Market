@@ -36,3 +36,9 @@
     font-weight: 900;
     src: url('../../assets/fonts/roboto-v47-latin-900.woff2') format('woff2'); 
   }
+
+  @media (max-width:990px) {
+    .searchDiv{
+      display: none;
+    }
+}
