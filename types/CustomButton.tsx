@@ -6,5 +6,5 @@ export interface CustomButtonType {
     children:ReactNode
     iconPosition?:"left" | "right"
     onClick?:MouseEventHandler<HTMLButtonElement>
-    bage?:number
+    bage?:number | null | undefined
 }

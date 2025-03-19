@@ -6,3 +6,9 @@ export interface HeaderTopTypes{
       title: string | null
       path: string
 }
+
+export interface HeaderNotificationType {
+      id:number,
+      icon?:ReactNode,
+      bage?:number | null | undefined
+}

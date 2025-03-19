@@ -17,7 +17,6 @@ const HeaderSearch = () => {
              <SearchIcon/>
           </CustomButton>
         </div>
-      
     </div>
   )
 }
