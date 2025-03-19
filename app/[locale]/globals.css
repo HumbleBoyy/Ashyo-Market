@@ -44,4 +44,17 @@
     .searchDiv{
       display: none;
     }
+    .searchDivsmall{
+      display: flex;
+  }
+}
+
+@media (max-width:431px) {
+  .searchDivsmall{
+    display: flex;
+    flex-direction: column-reverse !important;
+  }
+  .mobileSearchBtn{
+     width: 100%;
+  }
 }

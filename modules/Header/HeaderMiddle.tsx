@@ -4,6 +4,7 @@ import { useTranslations } from "next-intl"
 import HeaderSearch from "./HeaderSearch/HeaderSearch"
 import HeaderNotification from "./HeaderNotification/HeaderNotification"
 import Menu from "./NavMenu/Menu"
+import HeaderSearchMobile from "./HeaderSearchMobile/HeaderSearchMobile"
 
 
 const HeaderMiddle = () => {
@@ -22,7 +23,7 @@ const t = useTranslations('Header')
             <Link href={"tel:+998711234567"} className="blcok sm:hidden font-semibold text-[15px] text-[#203F68]">+998 (71) 123-45-67</Link>
             <Menu/>
         </div>
-        <HeaderSearch/>
+        <HeaderSearchMobile/>
     </div>
   )
 }
