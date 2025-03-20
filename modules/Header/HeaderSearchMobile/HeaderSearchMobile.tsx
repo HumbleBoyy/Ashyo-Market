@@ -1,3 +1,4 @@
+"use client"
 import { ArrowDownIcon, SearchIcon } from '@/assets'
 import CustomButton from '@/components/CustomButton'
 import CustomInput from '@/components/CustomInput'
