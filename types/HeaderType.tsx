@@ -20,6 +20,6 @@ export interface CategoryType {
       image:string
       name:string
       parentCategoryId:null | number
-      subCategories: CategoryType[]
+      subCategories:CategoryType[]
       updatedAt:string
 }
