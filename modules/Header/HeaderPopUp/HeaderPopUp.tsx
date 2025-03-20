@@ -9,7 +9,6 @@ import React, { useContext } from 'react'
 const HeaderPopUp = () => {
     const {openCategory} = useContext(Context)
     const {data:categoryList, isLoading} = getCategory()
-    console.log(categoryList)
   return (
     <div className={`w-full ${openCategory === true ? "border-1 h-[500px]" : "h-0 overflow-hidden"}   duration-300 flex absolute top-[100%]`}>
       <ul className='w-[30%] bg-[#EBEFF3] p-10'>
