@@ -16,10 +16,10 @@ export interface HeaderNotificationType {
 export interface CategoryType {
       id:number,
       createdAt:string
-      icon:ReactNode
+      icon:string
       image:string
       name:string
-      parentCategoryId: null
-      subCategories:[]
+      parentCategoryId:null | number
+      subCategories: CategoryType[]
       updatedAt:string
 }
