@@ -1,9 +1,9 @@
 import { CustomButtonType } from '@/types/CustomButton'
 import React, { FC } from 'react'
 
-const CustomButton:FC<CustomButtonType> = ({onClick,bage, extraClass, children, icon, iconPosition}) => {
+const CustomButton:FC<CustomButtonType> = ({onClick,bage,onBlur extraClass, children, icon, iconPosition}) => {
   return (
-    <button onClick={onClick} className={`${extraClass} relative flex py-[14px] px-[25px] text-[16px] bg-[#134E9B] rounded-[6px] items-center justify-center gap-[20px]`}>
+    <button onBlur={onBlur} onClick={onClick} className={`${extraClass} relative flex py-[14px] px-[25px] text-[16px] bg-[#134E9B] rounded-[6px] items-center justify-center gap-[20px]`}>
       {iconPosition === "left" && icon}
        {children}
       {iconPosition === "right" && icon} 

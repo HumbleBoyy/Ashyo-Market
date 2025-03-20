@@ -1,4 +1,4 @@
-import { MouseEventHandler, ReactNode } from "react"
+import { FocusEventHandler, MouseEventHandler, ReactNode } from "react"
 
 export interface CustomButtonType {
     extraClass?:string
@@ -7,4 +7,5 @@ export interface CustomButtonType {
     iconPosition?:"left" | "right"
     onClick?:MouseEventHandler<HTMLButtonElement>
     bage?:number | null | undefined
+    onBlur?:FocusEventHandler<HTMLButtonElement>
 }
