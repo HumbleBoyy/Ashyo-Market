@@ -2,7 +2,7 @@ import { instance } from "@/hooks/instance"
 import { useQuery } from "@tanstack/react-query"
 
 const getCategory = () => {
-    const {data, isLoading} = useQuery({
+    const {data = [], isLoading} = useQuery({
         queryKey:['categoryAll'],
         queryFn:()=> instance().get("/categories/all", {
             params:{
