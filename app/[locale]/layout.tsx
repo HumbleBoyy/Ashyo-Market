@@ -3,6 +3,7 @@ import {notFound} from 'next/navigation';
 import {routing} from '@/i18n/routing';
 import "./globals.css"
 import Header from '@/modules/Header';
+import { GlobalContextProvider } from '@/context/Context';
 export default async function LocaleLayout({
   children,
   params
@@ -24,8 +25,10 @@ export default async function LocaleLayout({
         </head>
       <body>
         <NextIntlClientProvider>
-        <Header/>
-          {children}
+          <GlobalContextProvider>
+              <Header/>
+              {children}
+          </GlobalContextProvider>
         </NextIntlClientProvider>
       </body>
     </html>
