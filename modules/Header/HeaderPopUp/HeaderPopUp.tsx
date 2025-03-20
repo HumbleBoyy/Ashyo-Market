@@ -5,8 +5,8 @@ import React, { useContext } from 'react'
 const HeaderPopUp = () => {
     const {openCategory, setOpenCategory} = useContext(Context)
   return (
-    <div>
-      
+    <div className='containers absolute top-[100%]'>
+      hello
     </div>
   )
 }

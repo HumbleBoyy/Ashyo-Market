@@ -5,12 +5,13 @@ import HeaderSearch from "./HeaderSearch/HeaderSearch"
 import HeaderNotification from "./HeaderNotification/HeaderNotification"
 import Menu from "./NavMenu/Menu"
 import HeaderSearchMobile from "./HeaderSearchMobile/HeaderSearchMobile"
+import HeaderPopUp from "./HeaderPopUp/HeaderPopUp"
 
 
 const HeaderMiddle = () => {
 const t = useTranslations('Header')
   return (
-    <div className='containers flex flex-col py-2 px-2'>
+    <div className='containers relative flex flex-col py-2 px-2'>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-0 sm:gap-[10px]">
             <Link href={"/"} className="flex items-center">
@@ -22,6 +23,7 @@ const t = useTranslations('Header')
             <HeaderNotification/>
             <Link href={"tel:+998711234567"} className="blcok sm:hidden font-semibold text-[15px] text-[#203F68] phoneNumberMobile">+998 (71) 123-45-67</Link>
             <Menu/>
+            <HeaderPopUp/>
         </div>
         <HeaderSearchMobile/>
     </div>
