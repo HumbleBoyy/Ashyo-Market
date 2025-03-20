@@ -12,3 +12,8 @@ export interface HeaderNotificationType {
       icon?:ReactNode,
       bage?:number | null | undefined
 }
+
+export interface CategoryType {
+      id:number,
+      
+  }
