@@ -4,6 +4,7 @@ import {routing} from '@/i18n/routing';
 import "./globals.css"
 import Header from '@/modules/Header';
 import { GlobalContextProvider } from '@/context/Context';
+import ReactQueryProvider from '@/query';
 export default async function LocaleLayout({
   children,
   params
@@ -25,10 +26,12 @@ export default async function LocaleLayout({
         </head>
       <body>
         <NextIntlClientProvider>
-          <GlobalContextProvider>
-              <Header/>
-              {children}
-          </GlobalContextProvider>
+          <ReactQueryProvider>
+            <GlobalContextProvider>
+                <Header/>
+                {children}
+            </GlobalContextProvider>
+          </ReactQueryProvider>
         </NextIntlClientProvider>
       </body>
     </html>
