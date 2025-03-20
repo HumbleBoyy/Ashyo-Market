@@ -15,5 +15,11 @@ export interface HeaderNotificationType {
 
 export interface CategoryType {
       id:number,
-      
-  }
+      createdAt:string
+      icon:ReactNode
+      image:string
+      name:string
+      parentCategoryId: null
+      subCategories:[]
+      updatedAt:string
+}
