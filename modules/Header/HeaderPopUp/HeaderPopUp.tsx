@@ -9,10 +9,10 @@ import React, { useContext, useState } from 'react'
 const HeaderPopUp = () => {
     const {openCategory} = useContext(Context)
     const {data:categoryList, isLoading} = getCategory()
-    const [childCategory, setChildCategory] = useState<CategoryType[]>([])
+    const [childCategory, setChildCategory] = useState<CategoryType>()
     const [activeItem, setActiveItem] = useState<number | null>(null)
     const handleShowCategory = (obj:CategoryType) => {
-        setChildCategory(obj.subCategories)
+        setChildCategory(obj)
         setActiveItem(obj.id)
     }
   return (
@@ -25,8 +25,9 @@ const HeaderPopUp = () => {
             </li>
           )}
       </ul>
-      <ul className='w-[70%] bg-[#FFFFFF] p-10'>
-          {childCategory.map((item:CategoryType)=> <li key={item.id}>{item.name}</li>)}
+      <ul className='w-[70%] flex flex-col bg-[#FFFFFF] p-10 gap-[20px]'>
+          <strong className='text-[16px] font-semibold leading-[100%]'>{childCategory?.name}</strong>
+          {childCategory?.subCategories.map((item:CategoryType)=><li key={item.id} className='text-[#545D6A] text-[14px] font-normal'>{item.name}</li>)}
       </ul>
     </div>
   )
