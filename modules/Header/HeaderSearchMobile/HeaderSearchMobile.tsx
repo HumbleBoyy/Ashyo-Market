@@ -1,13 +1,16 @@
 import { ArrowDownIcon, SearchIcon } from '@/assets'
 import CustomButton from '@/components/CustomButton'
 import CustomInput from '@/components/CustomInput'
+import { Context } from '@/context/Context'
 import { useTranslations } from 'next-intl'
+import { useContext } from 'react'
 
 const HeaderSearchMobile = () => {
   const t = useTranslations('Header')
+  const {setOpenCategory, openCategory} = useContext(Context)
   return (
     <div className="flex gap-1 items-center justify-center searchDivsmall">
-        <CustomButton extraClass="text-white cursor-pointer mobileSearchBtn" icon={<ArrowDownIcon/>} iconPosition={"right"}>
+        <CustomButton onClick={()=> setOpenCategory(!openCategory)} extraClass="text-white cursor-pointer mobileSearchBtn" icon={<ArrowDownIcon/>} iconPosition={"right"}>
         {t("category")}
         </CustomButton>
     <div className="flex items-center w-full h-[53px] bg-[#EBEFF3] rounded-[6px]">
