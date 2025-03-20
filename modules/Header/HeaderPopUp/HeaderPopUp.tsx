@@ -11,10 +11,10 @@ const HeaderPopUp = () => {
     const {data:categoryList, isLoading} = getCategory()
     console.log(categoryList)
   return (
-    <div className={`w-full ${openCategory === true ? "h-0" : "border-1 h-[500px]"}   duration-300 flex absolute top-[100%]`}>
+    <div className={`w-full ${openCategory === true ? "border-1 h-[500px]" : "h-0 overflow-hidden"}   duration-300 flex absolute top-[100%]`}>
       <ul className='w-[30%] bg-[#EBEFF3] p-10'>
           {categoryList.map((item:CategoryType)=> 
-            <li key={item.id} className='flex items-center py-[12px] px-[40px]'>
+            <li key={item.id} className='flex items-center py-[12px] px-[40px] gap-2 hover:bg-white rounded-md cursor-pointer'>
                 <Image className='h-[20px] w-[22px]' src={`${IMAGE_API}/${item.icon}`} alt="Ashyo" priority width={22} height={20}/>
                 <strong className='text-[16px] text-[#545D6A] font-normal'>{item.name}</strong>
             </li>
