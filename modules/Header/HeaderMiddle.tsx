@@ -23,8 +23,8 @@ const t = useTranslations('Header')
             <HeaderNotification/>
             <Link href={"tel:+998711234567"} className="blcok sm:hidden font-semibold text-[15px] text-[#203F68] phoneNumberMobile">+998 (71) 123-45-67</Link>
             <Menu/>
-            <HeaderPopUp/>
         </div>
+        <HeaderPopUp/>
         <HeaderSearchMobile/>
     </div>
   )
