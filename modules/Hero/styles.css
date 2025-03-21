@@ -27,6 +27,7 @@
 .swiper-pagination{
     display: flex;
     align-items: center;
+    gap: 6px;
 }
 .swiper-pagination-bullet-active::before{
     content: '';
