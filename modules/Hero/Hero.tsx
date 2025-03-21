@@ -6,6 +6,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 import './styles.css';
+import { BannerType } from "@/types/BannerType";
+import Image from "next/image";
+import { IMAGE_API } from "@/hooks/getEnv";
 
 const Hero = () => {
     const {data:bannersList} = getBanners()
@@ -27,9 +30,17 @@ const Hero = () => {
         modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
+        {bannersList.map((item:BannerType)=> (
+            <SwiperSlide>
+                <div className="flex items-center justify-between">
+                     <div className="flex flex-col items-start text-start gap-[20px]">
+                          <h2 className="font-black text-[44px] text-[#0A1729] leading-[120%]">{item.name}</h2>
+                          <p className="font-normal text-[16px] text-[#545D6A] leading-[100%]">{item.description}</p>
+                     </div>
+                     <Image src={`${IMAGE_API}/${item.image}`} alt={item.name} priority width={750} height={730}/>
+                </div>
+            </SwiperSlide>
+        ))}
       </Swiper>
       </div>
     </div>
