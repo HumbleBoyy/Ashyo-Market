@@ -16,15 +16,18 @@
 .swiper-pagination-bullet{
     width: 12px !important;
     height: 12px !important;
-    background: #Fff !important;
+    background: #95BEF3 !important;
 }
 .swiper-pagination-bullet-active{
     position: relative;
     width: 48px !important;
     height: 48px !important;
-    background: #Fff;
+    background: #FFFFFF !important;
 }
-
+.swiper-pagination{
+    display: flex;
+    align-items: center;
+}
 .swiper-pagination-bullet-active::before{
     content: '';
     position: absolute;
