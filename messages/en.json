@@ -6,5 +6,8 @@
       "contact":"Contacts",
       "category":"Category",
       "search":"What are you looking for?"
+    },
+    "Hero":{
+      "more":"More"
     }
 }
