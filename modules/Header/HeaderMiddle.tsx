@@ -6,6 +6,7 @@ import HeaderNotification from "./HeaderNotification/HeaderNotification"
 import Menu from "./NavMenu/Menu"
 import HeaderSearchMobile from "./HeaderSearchMobile/HeaderSearchMobile"
 import HeaderPopUp from "./HeaderPopUp/HeaderPopUp"
+import HeaderCategory from "./HeaderCategory"
 
 
 const HeaderMiddle = () => {
@@ -26,6 +27,7 @@ const t = useTranslations('Header')
         </div>
         <HeaderPopUp/>
         <HeaderSearchMobile/>
+        <HeaderCategory/>
     </div>
   )
 }
