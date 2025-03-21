@@ -8,7 +8,7 @@ import React, { useContext, useState } from 'react'
 
 const HeaderPopUp = () => {
     const {openCategory} = useContext(Context)
-    const {data:categoryList, isLoading} = getCategory()
+    const {data:categoryList} = getCategory()
     const [childCategory, setChildCategory] = useState<CategoryType>()
     const [activeItem, setActiveItem] = useState<number | null>(null)
     const handleShowCategory = (obj:CategoryType) => {
@@ -16,7 +16,7 @@ const HeaderPopUp = () => {
         setActiveItem(obj.id)
     }
   return (
-    <div className={`w-full ${openCategory === true ? "border-1 h-[500px]" : "h-0 overflow-hidden"}   duration-300 flex absolute top-[100%]`}>
+    <div className={`w-full ${openCategory === true ? "shadow-xl h-[500px]" : "h-0 overflow-hidden"}   duration-300 flex absolute top-[60%] z-50`}>
       <ul className='w-[30%] bg-[#EBEFF3] p-10'>
           {categoryList.map((item:CategoryType)=> 
             <li onMouseEnter={()=> handleShowCategory(item)} key={item.id} className={`flex items-center py-[12px] px-[40px] gap-2 ${activeItem === item.id && "bg-white"}  rounded-md cursor-pointer`}>
