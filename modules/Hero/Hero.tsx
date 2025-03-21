@@ -39,9 +39,9 @@ const Hero = () => {
                      <div className="flex flex-col items-start text-start gap-[20px]">
                           <h2 className="font-black text-[44px] text-[#0A1729] leading-[120%]">{item.name}</h2>
                           <p className="font-normal text-[16px] text-[#545D6A] leading-[100%]">{item.description}</p>
-                          <CustomButton extraClass={`font-normal text-white text-[16px] leading-[100%]`}>{t("more")}</CustomButton>
+                          <CustomButton extraClass={`font-normal text-white text-[16px] leading-[100%] w-[160px] !p-4`}>{t("more")}</CustomButton>
                      </div>
-                     <Image src={`${IMAGE_API}/${item.image}`} alt={item.name} priority width={750} height={730}/>
+                     <Image className="w-[500px] h-[450px] object-cover" src={`${IMAGE_API}/${item.image}`} alt={item.name} priority width={750} height={730}/>
                 </div>
             </SwiperSlide>
         ))}
