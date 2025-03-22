@@ -18,3 +18,5 @@ const debounce = (value:string | undefined, delay:number) => {
 
     return debounceValue;
 }
+
+export default debounce
