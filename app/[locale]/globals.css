@@ -56,6 +56,8 @@
     background-position: 200% 0;
   }
 }
+
+
   @media (max-width:990px) {
     .searchDiv{
       display: none;

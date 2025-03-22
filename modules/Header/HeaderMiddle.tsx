@@ -12,7 +12,7 @@ import HeaderCategory from "./HeaderCategory"
 const HeaderMiddle = () => {
 const t = useTranslations('Header')
   return (
-    <div className='containers relative flex flex-col py-1 px-0'>
+    <div className='containers relative flex flex-col py-1 px-1'>
         <div className="flex items-center justify-between">
           <div className="flex items-center gap-0 sm:gap-[10px]">
             <Link href={"/"} className="flex items-center">
