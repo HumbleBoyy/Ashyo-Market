@@ -15,25 +15,28 @@ const Products = () => {
     const {data:productsList} = getProducts()
     console.log(productsList)
   return (
-    <div className="containers py-[100px] px-[10px]">
-      <h2 className="text-[32px] font-bold text-start">{t("products")}</h2>
-      <div className="py-[100px]">
-      <Swiper
-        slidesPerView={3}
-        spaceBetween={30}
-        pagination={{
-          clickable: true,
-        }}
-        className="mySwiper"
-      >
-        {productsList.map((item:ProductType)=> (
-            <SwiperSlide key={item.id}>
-               <ProductCard item={item}/>
-            </SwiperSlide>
-        ))}
-      </Swiper>
+    <div className="py-[100px] px-[10px]">
+      <div className="containers">
+        <h2 className="text-[32px] font-bold text-start">{t("products")}</h2>
       </div>
-    </div>
+        <div className="py-[100px]">
+          <Swiper
+            slidesPerView={3}
+            spaceBetween={30}
+            loop={true}
+            pagination={{
+              clickable: true,
+            }}
+            className="mySwiper"
+          >
+            {productsList.map((item:ProductType)=> (
+                <SwiperSlide key={item.id}>
+                  <ProductCard item={item}/>
+                </SwiperSlide>
+            ))}
+          </Swiper>
+        </div>
+    </div> 
   )
 }
 
