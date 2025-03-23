@@ -9,6 +9,7 @@
     },
     "Hero":{
       "more":"More",
-      "products":"Most popular products"
+      "products":"Most popular products",
+      "basket":"Basket"
     }
 }
