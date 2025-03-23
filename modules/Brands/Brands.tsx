@@ -12,7 +12,7 @@ const Brands = () => {
        
           {brandsList.map((item:BrandType)=> (
             <div className='brand_item' key={item.id}>
-                <Image className='w-[200px] h-[70px]' src={`${IMAGE_API}/${item.image}`} alt={item.name} priority width={200} height={70}/>
+                <Image className='w-[200px] h-[70px] object-contain' src={`${IMAGE_API}/${item.image}`} alt={item.name} priority width={200} height={70}/>
             </div>
           ))}
        
