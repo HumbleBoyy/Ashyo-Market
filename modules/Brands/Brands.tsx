@@ -7,7 +7,6 @@ import "./style.css"
 
 const Brands = () => {
   const {data:brandsList} = getBrands()
-  console.log(brandsList)
   return (
     <div className='containers brands_wrapper py-[100px]'>
          {brandsList.map((item:BrandType)=> (

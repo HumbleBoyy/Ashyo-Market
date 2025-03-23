@@ -36,7 +36,6 @@ const HeaderSearch = () => {
        })
     },[name])
 
-    console.log(categorySearchData)
 
     const handleSearchClick = (data:string)=> {
        setValue(data)
