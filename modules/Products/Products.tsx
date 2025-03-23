@@ -13,13 +13,12 @@ import ProductCard from "@/components/ProductCard";
 const Products = () => {
     const t = useTranslations('Hero')
     const {data:productsList} = getProducts()
-    console.log(productsList)
   return (
     <div className="py-[100px] px-[10px]">
       <div className="containers">
-        <h2 className="text-[32px] font-bold text-start">{t("products")}</h2>
+        <h2 className="text-[25px] sm:text-[32px] font-bold text-start">{t("products")}</h2>
       </div>
-        <div className="py-[100px]">
+        <div className="py-[100px] carousel">
           <Swiper
             slidesPerView={3}
             spaceBetween={30}
@@ -35,6 +34,12 @@ const Products = () => {
                 </SwiperSlide>
             ))}
           </Swiper>
+        </div>
+
+        <div className="containers products">
+           {productsList.map((item:ProductType)=> (
+             <ProductCard item={item} key={item.id}/>
+           ))}
         </div>
     </div> 
   )
