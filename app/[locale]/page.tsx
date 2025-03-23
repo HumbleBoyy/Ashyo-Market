@@ -9,8 +9,8 @@ const page = () => {
       <Hero/>
       <Brands/>
       <Products/>
-      <ProductsSecond/>
       <CategoryBanner/>
+      <ProductsSecond/>
     </>
   )
 }

@@ -1,0 +1,37 @@
+.category_wrapper{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 200px);
+    grid-template-areas: "personalC airC smartP  more"
+      "washingM Tv Tv  refrigerator refrigerator";
+    gap: 10px;
+}
+
+.category_item:nth-child(1){
+    grid-area: personalC;
+    background-color: #5C4F8C;
+}
+.category_item:nth-child(2){
+    grid-area: airC;
+    background-color: #797C7D;
+}
+.category_item:nth-child(3){
+    grid-area: smartP;
+    background-color: #A1D7F3;
+}
+.category_item:nth-child(4){
+    grid-area: more;
+    background-color: #134E9B;
+}
+.category_item:nth-child(5){
+    grid-area: washingM;
+    background-color: #B0B0B0;
+}
+.category_item:nth-child(6){
+    grid-area: Tv;
+    background-color: #CEAF75;
+}
+.category_item:nth-child(7){
+    grid-area: refrigerator;
+    background-color: #D9D9D9;
+}
