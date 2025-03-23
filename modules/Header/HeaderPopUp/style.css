@@ -1,0 +1,48 @@
+.closeButton{
+    display: none;
+}
+.ClosePopup{
+    display: none;
+    height: 0;
+}
+
+.openPopUp{
+    display: flex;
+    height: auto;
+}
+@media (max-width:641px) {
+    .popUpWrapper{
+        top: 0;
+        /* height: 100vh; */
+    }
+    .closeButton{
+        display: block;
+    }
+    .leftSideWrapper{
+        width: 50%;
+        padding: 70px 10px;
+    }
+    .rightSIdeWrapper{
+        width: 60%;
+        padding: 70px 10px;
+    }
+
+    .openPopUp{
+        height: 100vh;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .leftSideWrapper{
+        width: 60%;
+        padding: 70px 2px;
+    }
+    .rightSIdeWrapper{
+        width: 40%;
+        padding: 70px 2px;
+    }
+    .focusWrapper{
+        padding: 10px 5px;
+    }
+}
