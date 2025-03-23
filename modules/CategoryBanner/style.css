@@ -2,8 +2,10 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px);
-    grid-template-areas: "personalC airC smartP  more"
-      "washingM Tv Tv  refrigerator refrigerator";
+    grid-template-areas: 
+    "personalC personalC airC smartP"
+    "washingM Tv Tv  refrigerator"
+    ;
     gap: 10px;
 }
 
@@ -20,18 +22,28 @@
     background-color: #A1D7F3;
 }
 .category_item:nth-child(4){
-    grid-area: more;
-    background-color: #134E9B;
+    grid-area: washingM;
+    background-color: #A1D7F3;
 }
 .category_item:nth-child(5){
-    grid-area: washingM;
-    background-color: #B0B0B0;
+    grid-area: Tv;
+    background-color: #544F4B;
 }
 .category_item:nth-child(6){
-    grid-area: Tv;
-    background-color: #CEAF75;
-}
-.category_item:nth-child(7){
     grid-area: refrigerator;
-    background-color: #D9D9D9;
+    background-color: #B0B0B0;
 }
+
+/* @media (max-width:772px) {
+    .category_wrapper{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 200px);
+        grid-template-areas: 
+       "personalC airC"
+        "smartP smartP"
+        ""
+        ;
+        gap: 10px;
+    }
+} */
