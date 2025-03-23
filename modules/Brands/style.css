@@ -3,45 +3,71 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 100px);
     grid-template-areas:
-     "a b c d"
-     "e b f d"
-     "e g f h"
+     "artel samsung nokia xiomi"
+     "apple samsung huawei xiomi"
+     "apple  vivo huawei  more"
     ;
     gap: 10px;
 }
 .brand_item:nth-child(1){
-    grid-area: a;
+    grid-area: artel;
     background-color: #67B43733;
 }
 .brand_item:nth-child(2){
-    grid-area: b;
+    grid-area: samsung;
     background-color: #034EA21A;
 }
 .brand_item:nth-child(2) > img{
    scale: 3;
 }
 .brand_item:nth-child(3){
-    grid-area: c;
+    grid-area: nokia;
     background-color: #00439C1F;
 }
 .brand_item:nth-child(4){
-    grid-area: d;
+    grid-area: xiomi;
     background-color: #FF670033;
 }
 .brand_item:nth-child(5){
-    grid-area: e;
+    grid-area: apple;
     background-color: #0000001A;
 }
 .brand_item:nth-child(6){
-    grid-area: f;
+    grid-area: vivo;
     background-color: #006DB833;
 }
 .brand_item:nth-child(7){
-    grid-area: g;
+    grid-area: huawei;
     background-color: #FF1A1F33;
 }
 .brand_item:nth-child(8){
-    grid-area: h;
+    grid-area: more;
     background-color: #EBEFF3;
-    
+}
+
+@media (max-width:800px) {
+    .brands_wrapper{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(1, 170px);
+        grid-template-areas:
+         "artel samsung"
+         "apple samsung"
+         "apple  vivo"
+         "nokia   xiomi"
+         "huawei  xiomi"
+         "huawei  more"
+        ;
+        gap: 5px;
+    }
+    .brand_item:nth-child(2) > img{
+        scale: 1;
+     }
+     .brand_item:nth-child(8){
+        grid-area: more;
+        background-color: #134E9B;
+    }
+    .moreText{
+        color: white;
+    }
 }
