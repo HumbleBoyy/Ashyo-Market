@@ -20,8 +20,8 @@ const Products = () => {
       </div>
         <div className="py-[100px] carousel">
           <Swiper
-            slidesPerView={3}
-            spaceBetween={30}
+            slidesPerView={5}
+            spaceBetween={10}
             loop={true}
             pagination={{
               clickable: true,
