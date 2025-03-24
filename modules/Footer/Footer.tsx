@@ -44,6 +44,9 @@ const Footer = () => {
                    <button className="flex justify-center items-center gap-[12px] text-[16px] font-bold rounded-[7px] w-[190px] h-[65px] cursor-pointer bg-[#EBEFF3]"><Play/>Google Play</button>
                 </div>
             </div>
+            <div className="flex justify-items-start">
+            <p className="text-[12px] text-[#00000066]">{t("date")}</p>
+        </div>
         </div>
         <div className="flex flex-col gap-[20px]">
             <h2 className="text-[20px] font-bold">{t("menu")}</h2>
