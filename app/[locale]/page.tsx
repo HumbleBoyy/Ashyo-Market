@@ -1,5 +1,7 @@
+"use client"
 import Brands from "@/modules/Brands/Brands"
 import CategoryBanner from "@/modules/CategoryBanner/CategoryBanner"
+import Footer from "@/modules/Footer/Footer"
 import Hero from "@/modules/Hero/Hero"
 import Music from "@/modules/Music/Music"
 import Products from "@/modules/Products/Products"
@@ -15,6 +17,7 @@ const page = () => {
       <ProductsSecond/>
       <Music/>
       <RecentlyViewed/>
+      <Footer/>
     </>
   )
 }
