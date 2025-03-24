@@ -88,3 +88,4 @@ export const MenuIcon = () => {
         </svg>
     )
 }
+
