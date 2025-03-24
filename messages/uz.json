@@ -12,6 +12,21 @@
       "products":"Eng mashxur mahsulotlar",
       "productsSecond":"Aksiyadagi mahsulotlar",
       "basket":"Savatcha",
-      "music":"Musiqa zavqini his qilish uchun ko'p mablag' sarflash shart emas!"
+      "music":"Musiqa zavqini his qilish uchun ko'p mablag' sarflash shart emas!",
+      "lastSeen":"Oxirgi ko’rgan mahsulotlar"
+    },
+    "Footer":{
+       "socialMedia":"Bizning ijtimoiy tarmoqlarda",
+       "download":"Mobil ilovani yuklab oling",
+       "menu":"Menyu",
+       "about":"Ashyo haqida",
+       "terms":"Foydalanish shartlari",
+       "privacy":"Maxfiylik va hafsizlik siyosati",
+       "returnItem":"Mahsulotlarni va tovarlarni qaytarish siyosati",
+       "contactUs":"Biz bilan aloqa",
+       "contact":"Aloqa",
+       "question":"Savolingiz bormi?",
+       "askQuestion":" O’zingiz qiziqtirgan savollarni bering",
+       "date":"© 2025 Ashyo ro’hatdan otgan litsenzalangan bu brend."
     }
 }

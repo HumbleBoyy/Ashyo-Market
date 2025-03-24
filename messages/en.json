@@ -12,6 +12,21 @@
       "products":"Most popular products",
       "productsSecond":"Products on sale",
       "basket":"Basket",
-      "music":"You don't have to spend a lot of money to enjoy music!"
-    }
+      "music":"You don't have to spend a lot of money to enjoy music!",
+      "lastSeen":"Recently viewed products"
+    },
+    "Footer":{
+      "socialMedia":"Our social media",
+      "download":"Download mobile app",
+      "menu":"Menu",
+      "about":"About Ashyo",
+      "terms":"Terms of use",
+      "privacy":"Privacy and security policy",
+      "returnItem":"Product and merchandise return policy",
+      "contactUs":"Contact us",
+      "contact":"Contact",
+      "question":"Do you have question?",
+      "askQuestion":"Ask questions that interest you.",
+      "date":"© 2025 Ashyo is a licensed brand that is fun to use."
+   }
 }
