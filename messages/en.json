@@ -18,7 +18,6 @@
     "SinglePage":{
       "price":"Price",
       "month":"Per month",
-      "from":"from",
       "fixedPrice":"UZS Installment payment",
       "addToBasket":"Add to cart",
       "buy":"Purchase",
