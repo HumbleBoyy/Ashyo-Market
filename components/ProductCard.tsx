@@ -6,15 +6,17 @@ import React, { FC } from 'react'
 import { RiShoppingBag2Fill } from "react-icons/ri";
 import { FaBalanceScaleLeft, FaRegHeart } from 'react-icons/fa'
 import { useTranslations } from 'next-intl'
+import { useRouter } from '@/i18n/navigation'
 
 const ProductCard:FC<{item:ProductType}> = ({item}) => {
   const formatNumber = (num: number) => {
     return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
   };
   const t = useTranslations("Hero")
+  const router = useRouter()
   return (
     <div className='productCard w-[270px] flex flex-col gap-[15px]'>
-        <div className='relative flex justify-center items-center rounded-[6px] w-full h-[270px] bg-[#EBEFF3]'>
+        <div onClick={() => router.push(`/products/${item.id}`)} className='relative flex justify-center cursor-pointer items-center rounded-[6px] w-full h-[270px] bg-[#EBEFF3]'>
            <Image className='productCardImage w-[200px] h-[200px] object-cover' src={`${IMAGE_API}/${item.image}`} alt={item.name} width={200} height={200} priority/>
            <div className='absolute text-[24px] top-[10px] right-[20px]'>
                <FaRegHeart color='#545D6A'/>
