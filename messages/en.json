@@ -16,14 +16,15 @@
       "lastSeen":"Recently viewed products"
     },
     "SinglePage":{
-      "price":"Narxi",
-      "month":"Oyiga",
-      "fixedPrice":"UZS dan muddatli to'lov",
-      "addToBasket":"Savatga qo‘shish",
-      "buy":"Xarid qilish",
-      "shipping":"Yetkazib berish O’zbekiston bo’ylab",
-      "fromStore":"Do’kondi o’zidan olib ketishingiz mumkin",
-      "deliveryTime":"Tahminiy yetkazib berish vaqti 1 kundan 3 kungacha......"
+      "price":"Price",
+      "month":"Per month",
+      "from":"from",
+      "fixedPrice":"UZS Installment payment",
+      "addToBasket":"Add to cart",
+      "buy":"Purchase",
+      "shipping":"Delivery throughout Uzbekistan",
+      "fromStore":"You can take it from the store.",
+      "deliveryTime":"Estimated delivery time is 1 to 3 days......"
     },
     "Footer":{
       "socialMedia":"Our social media",
