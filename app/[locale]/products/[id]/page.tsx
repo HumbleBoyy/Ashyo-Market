@@ -11,15 +11,18 @@ import { IoMdTime } from 'react-icons/io'
 import { IoStorefrontSharp } from 'react-icons/io5'
 
 const Product = () => {
-    const {id} = useParams()
-    const {data:singleData} = getSingleProduct(id)
-    const t = useTranslations("SinglePage")
-    console.log(singleData)
-
     const formatNumber = (num: number | null | undefined) => {
         if (num === null || num === undefined) return "N/A"; // Handle invalid numbers
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     };
+    const {id} = useParams()
+    const {data:singleData} = getSingleProduct(id)
+    const t = useTranslations("SinglePage")
+
+    const price = (Math.floor(singleData.price) / 100) * 2.5;
+    const formattedPice = `${price.toLocaleString()}`
+
+
   return (
     <div className='containers py-[50px]'>
        <h2 className='font-bold text-[32px]'>{singleData.name}</h2>
@@ -35,11 +38,11 @@ const Product = () => {
               <h3 className='text-[32px] font-bold text-[#06172D] flex items-baseline gap-[10px]'><span className='text-[16px] text-[#515D6C] font-normal'>{t("price")}</span>{formatNumber(singleData.price)} <span className='!text-[24px]'>UZS</span></h3>
               <div className='flex flex-col gap-[10px]'>
                  <div className='flex items-center justify-center w-[475px] h-[55px] rounded-[6px] bg-[#EBEFF3]'>
-                      <p className='flex items-center gap-[2px] text-[16px] text-[#545D6A] font-normal'>{t("month")} {(Math.floor(singleData.price) / 100) * 2} {t("fixedPrice")}</p>
+                      <p className='flex items-center gap-[2px] text-[16px] text-[#545D6A] font-normal'>{t("month")} {formattedPice} {t("fixedPrice")}</p>
                  </div>
                  <div className='flex items-center gap-[15px]'>
-                     <button className='w-[230px] text-[16px] font-normal border-[1px] border-[#134E9B] text-[#134E9B] rounded-[6px] bg-none py-[15px] px-[40px]'>{t("addToBasket")}</button>
-                     <button className='w-[230px] text-[16px] font-normal border-[1px] border-[#134E9B] text-white rounded-[6px] bg-[#134E9B] py-[15px] px-[40px]'>{t("buy")}</button>
+                     <button className='w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-[#134E9B] rounded-[6px] bg-none py-[15px] px-[40px]'>{t("addToBasket")}</button>
+                     <button className='w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-white rounded-[6px] bg-[#134E9B] py-[15px] px-[40px]'>{t("buy")}</button>
                  </div>
               </div>
               <div className='flex flex-col gap-[20px]'>
