@@ -23,7 +23,9 @@
       "buy":"Purchase",
       "shipping":"Delivery throughout Uzbekistan",
       "fromStore":"You can take it from the store.",
-      "deliveryTime":"Estimated delivery time is 1 to 3 days......"
+      "deliveryTime":"Estimated delivery time is 1 to 3 days......",
+      "features":"Features",
+      "opinion":"Customers comment"
     },
     "Footer":{
       "socialMedia":"Our social media",

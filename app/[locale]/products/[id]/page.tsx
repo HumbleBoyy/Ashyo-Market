@@ -5,6 +5,7 @@ import getSingleProduct from '@/service/getSingleProduct'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
+import { useState } from 'react'
 import { FaRegHeart } from 'react-icons/fa'
 import { FaScaleUnbalanced, FaTruckFast } from 'react-icons/fa6'
 import { IoMdTime } from 'react-icons/io'
@@ -21,7 +22,7 @@ const Product = () => {
 
     const price = (Math.floor(singleData.price) / 100) * 2.5;
     const formattedPice = `${price.toLocaleString()}`
-
+    const [variationACtive, setVariationActive] = useState<"features" | "comments">("features")
 
   return (
     <div className='containers py-[50px]'>
@@ -51,6 +52,11 @@ const Product = () => {
                  <p className='text-[16px] flex gap-[15px] items-center font-normal text-[#06172DB2]'><IoMdTime/>{t("deliveryTime")}</p>
               </div>
            </div>
+       </div>
+
+       <div className='flex items-center gap-[87px] mb-[40px]'>
+          <strong onClick={()=> setVariationActive("features")} className={` ${variationACtive === "features" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"}`}>{t("features")}</strong>
+          <strong onClick={()=> setVariationActive("comments")} className={` ${variationACtive === "comments" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"}`}>{t("opinion")}</strong>
        </div>
     </div>
   )

@@ -23,7 +23,9 @@
       "buy":"Xarid qilish",
       "shipping":"Yetkazib berish O’zbekiston bo’ylab",
       "fromStore":"Do’kondi o’zidan olib ketishingiz mumkin",
-      "deliveryTime":"Tahminiy yetkazib berish vaqti 1 kundan 3 kungacha......"
+      "deliveryTime":"Tahminiy yetkazib berish vaqti 1 kundan 3 kungacha......",
+      "features":"Xususiyatlari",
+      "opinion":"Mijozlar izohi"
     },
     "Footer":{
        "socialMedia":"Bizning ijtimoiy tarmoqlarda",
