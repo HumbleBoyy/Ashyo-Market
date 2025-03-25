@@ -12,7 +12,7 @@ const Features = () => {
     ];
   
     return (
-      <div className="w-full max-w-md bg-white border border-gray-300 rounded-md p-4">
+      <div className="w-full max-w-lg bg-white">
         {specs.map((spec, index) => (
           <div
             key={index}
