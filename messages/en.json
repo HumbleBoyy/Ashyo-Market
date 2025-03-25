@@ -15,6 +15,16 @@
       "music":"You don't have to spend a lot of money to enjoy music!",
       "lastSeen":"Recently viewed products"
     },
+    "SinglePage":{
+      "price":"Narxi",
+      "month":"Oyiga",
+      "fixedPrice":"UZS dan muddatli to'lov",
+      "addToBasket":"Savatga qo‘shish",
+      "buy":"Xarid qilish",
+      "shipping":"Yetkazib berish O’zbekiston bo’ylab",
+      "fromStore":"Do’kondi o’zidan olib ketishingiz mumkin",
+      "deliveryTime":"Tahminiy yetkazib berish vaqti 1 kundan 3 kungacha......"
+    },
     "Footer":{
       "socialMedia":"Our social media",
       "download":"Download mobile app",

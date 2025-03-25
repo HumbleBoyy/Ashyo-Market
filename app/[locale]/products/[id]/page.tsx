@@ -2,6 +2,7 @@
 import { LikedIcon } from '@/assets'
 import { IMAGE_API } from '@/hooks/getEnv'
 import getSingleProduct from '@/service/getSingleProduct'
+import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import { useParams } from 'next/navigation'
 import { FaRegHeart } from 'react-icons/fa'
@@ -10,6 +11,7 @@ import { FaScaleUnbalanced } from 'react-icons/fa6'
 const Product = () => {
     const {id} = useParams()
     const {data:singleData} = getSingleProduct(id)
+    const t = useTranslations("SinglePage")
     console.log(singleData)
   return (
     <div className='containers py-[50px]'>
@@ -21,6 +23,9 @@ const Product = () => {
                 <FaScaleUnbalanced className='cursor-pointer'/>
                 <FaRegHeart className='cursor-pointer' />
               </div>
+           </div>
+           <div className='flex gap-[35px]'>
+              <div className='flex items-center'><span></span></div>
            </div>
        </div>
     </div>
