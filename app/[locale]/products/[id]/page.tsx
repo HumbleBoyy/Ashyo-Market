@@ -1,6 +1,8 @@
 "use client"
 import { LikedIcon } from '@/assets'
 import { IMAGE_API } from '@/hooks/getEnv'
+import Comments from '@/modules/Products/SinglePage/Comments'
+import Features from '@/modules/Products/SinglePage/Features'
 import getSingleProduct from '@/service/getSingleProduct'
 import { useTranslations } from 'next-intl'
 import Image from 'next/image'
@@ -57,6 +59,10 @@ const Product = () => {
        <div className='flex items-center gap-[80px] mb-[40px] mt-[80px]'>
           <strong onClick={()=> setVariationActive("features")} className={` ${variationACtive === "features" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"} cursor-pointer`}>{t("features")}</strong>
           <strong onClick={()=> setVariationActive("comments")} className={` ${variationACtive === "comments" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"} cursor-pointer`}>{t("opinion")}</strong>
+       </div>
+
+       <div>
+        {variationACtive === "features" ? <Features/> : <Comments/>}
        </div>
     </div>
   )
