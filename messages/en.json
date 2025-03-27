@@ -25,7 +25,8 @@
       "fromStore":"You can take it from the store.",
       "deliveryTime":"Estimated delivery time is 1 to 3 days......",
       "features":"Features",
-      "opinion":"Customers comment"
+      "opinion":"Customers comment",
+      "featuresDetail":"Details are not provided about the product's feature"
     },
     "Footer":{
       "socialMedia":"Our social media",

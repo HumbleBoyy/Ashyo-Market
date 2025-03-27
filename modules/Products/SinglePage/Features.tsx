@@ -1,11 +1,12 @@
 "use client"
 
 import getFeatures from "@/service/getFeatures";
+import { useTranslations } from "next-intl";
 import { FC } from "react";
 
 const Features:FC<{id:string | any}> = ({id}) => {
+  const t = useTranslations("SinglePage")
    const {data} = getFeatures(id)
-   console.log(data)
     // const specs = [
     //   { label: "Brend", value: "Vivo" },
     //   { label: "CIM kartalar soni", value: "2" },
@@ -29,8 +30,8 @@ const Features:FC<{id:string | any}> = ({id}) => {
             <span className="text-gray-800">{item.variationOption.value}</span>
           </div>
         )) : <>
-         <div className="flex justify-start items-start h-[200px]">
-            <h2 className="text-[20px] font-bold"><span className="text-red-600">!</span>Feature of the  product is not provided</h2>
+         <div className="flex max-w-lg justify-start items-start h-[200px]">
+            <h2 className="text-[18px] w-[50%] font-bold"><span className="text-red-600">!</span>{t("featuresDetail")}</h2>
          </div>
         </>}
       </div>
