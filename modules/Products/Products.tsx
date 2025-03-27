@@ -3,7 +3,6 @@ import getProducts from "@/service/getProducts"
 import { useTranslations } from "next-intl"
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import './styles.css';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { ProductType } from "@/types/ProductType";
