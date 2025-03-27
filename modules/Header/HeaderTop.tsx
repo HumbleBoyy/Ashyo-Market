@@ -19,19 +19,19 @@ const HeaderTop = () => {
       id:2,
       icon:null,
       title:t("about"),
-      path:"/aboutus"
+      path:"#"
     },
     {
       id:3,
       icon:null,
       title:t("products"),
-      path:"/products"
+      path:"#"
     },
     {
         id:4,
         icon:null,
         title:t("contact"),
-        path:"/contacts"
+        path:"#"
     },
   ]
   return (
