@@ -3,7 +3,7 @@ import { ReactNode } from "react"
 import { useTranslations } from "use-intl"
 import { Link } from "@/i18n/navigation"
 import { IoChatboxEllipsesOutline } from "react-icons/io5"
-
+import "./style.css"
 const Footer = () => {
     const t = useTranslations("Footer")
     const socialMediaBtn:{id:number, icon:ReactNode}[] = [
@@ -26,7 +26,7 @@ const Footer = () => {
     ]
 
   return (
-   <footer className='containers flex items-center justify-between py-[100px]'>
+   <footer className='containers flex items-center justify-center gap-[20px] lg:gap-0 lg:justify-between py-[100px]'>
         <div className="flex flex-col gap-[40px]">
             <div className="flex flex-col gap-[20px]">
                 <h2 className="text-[20px] text-[#000000B2] font-bold">{t("socialMedia")}</h2>
@@ -57,7 +57,7 @@ const Footer = () => {
               <li className="list-none text-[16px] text-[#000000B2] cursor-pointer">{t("contactUs")}</li>
             </ul>
         </div>
-        <div className="flex flex-col gap-[32px]">
+        <div className="left_side flex flex-col gap-[32px]">
             <div className="flex flex-col gap-[15px]">
               <h2 className="text-[20px] text-[#000000B2] font-bold">{t("contact")}</h2>
               <Link href={"tel:+998711234567"} className="font-bold text-[24px] text-[#00000080]">+998 (71) 123-45-67</Link>

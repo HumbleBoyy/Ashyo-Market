@@ -1,0 +1,6 @@
+
+@media (max-width:1024px) {
+    .left_side{
+        display: none;
+    }
+}
