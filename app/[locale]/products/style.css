@@ -118,8 +118,9 @@
          width: 170px;
          font-size: 15px;
          padding: 15px 0px;
+         margin: 0 auto;
       }
       .singlePage_image{
          width: 250px;
       }
-   }
+}
