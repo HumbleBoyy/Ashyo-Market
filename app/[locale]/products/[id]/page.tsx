@@ -64,7 +64,7 @@ const Product = () => {
           <strong onClick={()=> setVariationActive("comments")} className={` ${variationACtive === "comments" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"} cursor-pointer`}>{t("opinion")}</strong>
        </div>
        <div>
-        {variationACtive === "features" ? <Features/> : <Comments/>}
+        {variationACtive === "features" ? <Features id={id}/> : <Comments/>}
        </div>
     </div>
     <ProductsSecond/>
