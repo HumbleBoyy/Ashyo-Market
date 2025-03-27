@@ -4,7 +4,8 @@ import getFeatures from "@/service/getFeatures";
 import { FC } from "react";
 
 const Features:FC<{id:string | unknown}> = ({id}) => {
-   const {data:variation} = getFeatures(id)
+   const {data} = getFeatures(id)
+   console.log(data)
     const specs = [
       { label: "Brend", value: "Vivo" },
       { label: "CIM kartalar soni", value: "2" },
