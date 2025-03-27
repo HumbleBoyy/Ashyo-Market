@@ -1,6 +1,8 @@
 "use client"
 import { LikedIcon } from '@/assets'
 import { IMAGE_API } from '@/hooks/getEnv'
+import Footer from '@/modules/Footer/Footer'
+import ProductsSecond from '@/modules/Products/ProductsSecond'
 import Comments from '@/modules/Products/SinglePage/Comments'
 import Features from '@/modules/Products/SinglePage/Features'
 import getSingleProduct from '@/service/getSingleProduct'
@@ -27,7 +29,8 @@ const Product = () => {
     const [variationACtive, setVariationActive] = useState<"features" | "comments">("features")
 
   return (
-    <div className='containers py-[50px]'>
+  <>
+       <div className='containers py-[50px]'>
        <h2 className='font-bold text-[32px]'>{singleData.name}</h2>
        <div className='flex items-center gap-[32px]'>
            <div className='relative flex justify-center items-center mt-[30px] w-[530px] h-[430px] bg-[#EBEFF3] rounded-[10px]'>
@@ -65,6 +68,9 @@ const Product = () => {
         {variationACtive === "features" ? <Features/> : <Comments/>}
        </div>
     </div>
+    <ProductsSecond/>
+    <Footer/>
+  </>
   )
 }
 
