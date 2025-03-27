@@ -2,12 +2,10 @@
 import { IMAGE_API } from '@/hooks/getEnv'
 import getCategory from '@/service/getCategory'
 import { CategoryType } from '@/types/HeaderType'
-import { useTranslations } from 'next-intl'
 import Image from 'next/image'
 import "./style.css"
 const CategoryBanner = () => {
     const {data:categoriesBanner} = getCategory(6)
-    const t = useTranslations("Hero")
   return (
     <div className='containers category_wrapper py-[100px] px-[2px]'>
         {...categoriesBanner.map((item:CategoryType)=> (
