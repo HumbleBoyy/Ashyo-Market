@@ -20,7 +20,7 @@ const Features:FC<{id:string | any}> = ({id}) => {
   
     return (
       <div className="w-full max-w-lg bg-white">
-        {data?.configurations?.map((item:any) => (
+        {data.cconfigurations ? data?.configurations?.map((item:any) => (
           <div
             key={item.id}
             className="flex justify-between py-2 border-b border-dashed border-gray-300 last:border-b-0"
@@ -28,7 +28,11 @@ const Features:FC<{id:string | any}> = ({id}) => {
             <span className="font-medium text-gray-600">{item.variationOption.variation.name}</span>
             <span className="text-gray-800">{item.variationOption.value}</span>
           </div>
-        ))}
+        )) : <>
+         <div className="flex justify-start items-start h-[200px]">
+            <h2 className="text-[20px] font-bold"><span className="text-red-600">!</span>Feature of the  product is not provided</h2>
+         </div>
+        </>}
       </div>
     );
   };
