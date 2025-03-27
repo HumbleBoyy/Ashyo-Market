@@ -2,6 +2,9 @@ import { ReactNode } from "react"
 import { UserIconC } from "@/assets";
 
 const Comments = () => {
+  const date = new Date()
+  const commentsDate = `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`;
+
   const comments:{
     id: number
     userName: string
@@ -16,7 +19,7 @@ const Comments = () => {
       userImage:<UserIconC/>,
       star:"⭐⭐⭐⭐⭐",
       comment:"The most inconvenient application written with the left heel. The interface is awkward. Putting something up for sale is as difficult as possible. You need to go in the tab in the masonry in the hidden tabs in the buttons. Kick-ass",
-      commentDate:"July 18 2024"
+      commentDate: commentsDate
     },
     {
       id:2,
@@ -24,7 +27,7 @@ const Comments = () => {
       userImage:<UserIconC/>,
       star:"⭐⭐⭐⭐⭐",
       comment:"The most inconvenient application written with the left heel. You need to go in the tab in the masonry in the hidden tabs in the buttons. Kick-ass",
-      commentDate:"July 18 2024"
+      commentDate:commentsDate
     },
     {
       id:3,
@@ -32,7 +35,7 @@ const Comments = () => {
       userImage:<UserIconC/>,
       star:"⭐⭐⭐⭐",
       comment:"You need to go in the tab in the masonry in the hidden tabs in the buttons. Kick-ass",
-      commentDate:"July 18 2024"
+      commentDate:commentsDate
     }
   ]
   return (
