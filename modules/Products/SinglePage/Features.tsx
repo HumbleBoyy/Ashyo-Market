@@ -7,18 +7,6 @@ import { FC } from "react";
 const Features:FC<{id:string | any}> = ({id}) => {
   const t = useTranslations("SinglePage")
    const {data} = getFeatures(id)
-    // const specs = [
-    //   { label: "Brend", value: "Vivo" },
-    //   { label: "CIM kartalar soni", value: "2" },
-    //   { label: "O'lchamlari", value: "75,09x155,11x8,28" },
-    //   { label: "Modeli", value: "Redmi T12" },
-    //   { label: "Akumulyator hajmi", value: "4000 amp" },
-    //   { label: "Yadrolar soni", value: "8" },
-    //   { label: "Tezkor xotira RAM", value: "6 GB" },
-    //   { label: "Ichki xotira ROM", value: "128 GB" },
-    //   { label: "Protsessori", value: "MediaTek Helio P35 (MT6765)" },
-    // ];
-  
     return (
       <div className="w-full max-w-lg bg-white">
         {data.cconfigurations ? data?.configurations?.map((item:any) => (
