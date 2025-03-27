@@ -9,7 +9,7 @@ const Features:FC<{id:string | any}> = ({id}) => {
    const {data} = getFeatures(id)
     return (
       <div className="w-full max-w-lg bg-white">
-        {data.cconfigurations !== null ? data?.configurations?.map((item:any) => (
+        {data.configurations && data.configurations.length > 0 ? data?.configurations?.map((item:any) => (
           <div
             key={item.id}
             className="flex justify-between py-2 border-b border-dashed border-gray-300 last:border-b-0"
