@@ -19,8 +19,8 @@ const Features:FC<{id:string | any}> = ({id}) => {
           </div>
         )) : 
         <>
-         <div className="flex max-w-lg justify-start items-start h-auto">
-            <h2 className="text-[18px] w-[50%] font-bold"><span className="text-red-600">!</span>{t("featuresDetail")}</h2>
+         <div className="flex w-full bg-slate-200 rounded-[5px] justify-center items-center h-[200px]">
+            <h2 className="text-[18px] font-bold"><span className="text-red-600">!</span>{t("featuresDetail")}</h2>
          </div>
         </> }
       </div>
