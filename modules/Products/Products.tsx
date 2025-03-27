@@ -27,6 +27,7 @@ const Products = () => {
               clickable: true,
             }}
             className="mySwiper"
+            
           >
             {productsList.map((item:ProductType)=> (
                 <SwiperSlide key={item.id}>
