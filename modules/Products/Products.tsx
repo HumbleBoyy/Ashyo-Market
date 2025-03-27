@@ -42,9 +42,9 @@ const Products = () => {
              <ProductCard item={item} key={item.id}/>
            ))}
         </div>
-        <div className="flex justify-center mt-[30px] w-full">
+        <div className="prodcutsBtn flex justify-center mt-[30px] w-full">
               <button className=" py-[10px] px-[70px] text-[#134E9B] bg-[#EBEFF3] rounded-[6px] text-[14px] font-normal">{t("more")}</button>
-          </div>
+        </div>
     </div> 
   )
 }

@@ -17,7 +17,7 @@ const page = () => {
       <ProductsSecond/>
       <Music/>
       <RecentlyViewed/>
-      {/* <Footer/> */}
+      <Footer/>
     </>
   )
 }
