@@ -3,34 +3,34 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 200px);
     grid-template-areas: 
-    "personalC personalC airC smartP"
-    "washingM Tv Tv  refrigerator"
+    "a a b c"
+    "d e e  f"
     ;
     gap: 10px;
 }
 
 .category_item:nth-child(1){
-    grid-area: personalC;
+    grid-area: a;
     background-color: #5C4F8C;
 }
 .category_item:nth-child(2){
-    grid-area: airC;
+    grid-area: b;
     background-color: #797C7D;
 }
 .category_item:nth-child(3){
-    grid-area: smartP;
+    grid-area: c;
     background-color: #A1D7F3;
 }
 .category_item:nth-child(4){
-    grid-area: washingM;
+    grid-area: d;
     background-color: #A1D7F3;
 }
 .category_item:nth-child(5){
-    grid-area: Tv;
+    grid-area: e;
     background-color: #544F4B;
 }
 .category_item:nth-child(6){
-    grid-area: refrigerator;
+    grid-area: f;
     background-color: #B0B0B0;
 }
 
