@@ -30,7 +30,7 @@ const Features:FC<{id:string | any}> = ({id}) => {
             <span className="text-gray-800">{item.variationOption.value}</span>
           </div>
         )) : <>
-         <div className="flex max-w-lg justify-start items-start h-[200px]">
+         <div className="flex max-w-lg justify-start items-start h-auto">
             <h2 className="text-[18px] w-[50%] font-bold"><span className="text-red-600">!</span>{t("featuresDetail")}</h2>
          </div>
         </>}
