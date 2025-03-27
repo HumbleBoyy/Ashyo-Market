@@ -34,7 +34,7 @@ const Product = () => {
    <div className='containers flex flex-col py-[50px] px-[5px] sm:px-[10px]'>
   <div className='single_page'>
    <div className='flex flex-col'>
-      <h2 className='font-bold text-[32px]'>{singleData.name}</h2>
+      <h2 className='singlePage_title font-bold text-[32px]'>{singleData.name}</h2>
       <div className='relative singLepage_image_wrapper flex justify-center items-center mt-[30px] w-[550px] h-[430px] bg-[#EBEFF3] rounded-[10px]'>
          <Image 
             src={`${IMAGE_API}/${singleData.image}`} 
@@ -42,7 +42,7 @@ const Product = () => {
             width={340} 
             height={340} 
             priority
-            className="object-contain" 
+            className="object-contain singlePage_image" 
          />
          <div className='absolute text-[24px] text-[#5F728B] font-light top-[25px] right-[30px] flex gap-[20px]'>
             <FaScaleUnbalanced className='cursor-pointer'/>
@@ -51,15 +51,15 @@ const Product = () => {
       </div>
       
       </div>
-       <div className='price_shipping_div flex flex-col gap-[35px]'>
+       <div className='price_shipping_div flex flex-col gap-[35px] px-[2px]'>
               <h3 className='text-[32px] font-bold text-[#06172D] flex items-baseline gap-[10px]'><span className='text-[16px] text-[#515D6C] font-normal'>{t("price")}</span>{formatNumber(singleData.price)} <span className='!text-[24px]'>UZS</span></h3>
               <div className='flex flex-col gap-[10px]'>
-                 <div className='flex items-center justify-center w-[475px] h-[55px] rounded-[6px] bg-[#EBEFF3]'>
+                 <div className='discount_wrapper flex items-center justify-center w-[475px] h-[55px] rounded-[6px] bg-[#EBEFF3]'>
                       <p className='flex items-center gap-[2px] text-[16px] text-[#545D6A] font-normal'>{t("month")} {formattedPice} {t("fixedPrice")}</p>
                  </div>
                  <div className='flex items-center gap-[15px]'>
-                     <button className='w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-[#134E9B] rounded-[6px] bg-none py-[15px] px-[40px]'>{t("addToBasket")}</button>
-                     <button className='w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-white rounded-[6px] bg-[#134E9B] py-[15px] px-[40px]'>{t("buy")}</button>
+                     <button className='singlePage_two_buttons w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-[#134E9B] rounded-[6px] bg-none py-[15px] px-[40px]'>{t("addToBasket")}</button>
+                     <button className='singlePage_two_buttons w-[230px] cursor-pointer text-[16px] font-normal border-[1px] border-[#134E9B] text-white rounded-[6px] bg-[#134E9B] py-[15px] px-[40px]'>{t("buy")}</button>
                  </div>
               </div>
               <div className='flex flex-col gap-[20px]'>

@@ -39,7 +39,7 @@ const Comments = () => {
     }
   ]
   return (
-    <div className="flex flex-col gap-[50px] h-auto overflow-y-hidden">
+    <div className="flex flex-col gap-[50px] h-auto overflow-y-hidden px-[10px]">
       {comments.map((item)=> (
        <div key={item.id} className="flex  gap-[10px]">
         <div className="flex items-center bg-slate-200 justify-center max-w-[60px] h-[60px] rounded-[100%]">
@@ -50,10 +50,10 @@ const Comments = () => {
                   <h2 className="font-normal text-[18px]">{item.userName}</h2>
                   <p className="text-[15px]">{item.star}</p>
              </div>
-             <div className="flex flex-col gap-[10px]">
+             {/* <div className="flex flex-col gap-[10px]">
                 <p className="font-normal text-[12px] text-[#00000066]">{item.commentDate}</p>
                 <p className="text-[15px] font-normal text-[#515D6C] w-[500px]">{item.comment}</p>
-             </div>
+             </div> */}
           </div>
        </div>
       ))}
