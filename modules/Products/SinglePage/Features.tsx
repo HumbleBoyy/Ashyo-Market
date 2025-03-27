@@ -20,13 +20,13 @@ const Features:FC<{id:string | any}> = ({id}) => {
   
     return (
       <div className="w-full max-w-lg bg-white">
-        {data.map((item:any) => (
+        {data?.configurations?.map((item:any) => (
           <div
             key={item.id}
             className="flex justify-between py-2 border-b border-dashed border-gray-300 last:border-b-0"
           >
-            <span className="font-medium text-gray-600">{item.name}</span>
-            <span className="text-gray-800">{item.options[0].value}</span>
+            <span className="font-medium text-gray-600">{item.variationOption.variation.name}</span>
+            <span className="text-gray-800">{item.variationOption.value}</span>
           </div>
         ))}
       </div>
