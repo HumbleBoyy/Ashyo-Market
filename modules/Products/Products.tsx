@@ -41,10 +41,10 @@ const Products = () => {
            {productsList.map((item:ProductType)=> (
              <ProductCard item={item} key={item.id}/>
            ))}
-           <div className="flex justify-center items-center mt-[30px]">
-              <button className="mx-auto  py-[10px] px-[70px] bg-[#EBEFF3] text-[14px] font-normal">{t("more")}</button>
-           </div>
         </div>
+        <div className="flex justify-center mt-[30px] w-full">
+              <button className=" py-[10px] px-[70px] text-[#134E9B] bg-[#EBEFF3] rounded-[6px] text-[14px] font-normal">{t("more")}</button>
+          </div>
     </div> 
   )
 }
