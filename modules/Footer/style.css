@@ -1,6 +1,25 @@
-
+.large_screen_footer{
+    display: flex;
+}
+.small_screen_footer{
+    display: none;
+}
 @media (max-width:1024px) {
     .left_side{
         display: none;
+    }
+}
+
+@media (max-width:842px) {
+    .large_screen_footer{
+        display: none;
+    }
+    .small_screen_footer{
+        display: flex;
+    }
+}
+@media (max-width:689px) {
+    .phoneNumber{
+        font-size: 20px;
     }
 }
