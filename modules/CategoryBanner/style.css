@@ -34,16 +34,22 @@
     background-color: #B0B0B0;
 }
 
-/* @media (max-width:772px) {
+@media (max-width:980px) {
     .category_wrapper{
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: repeat(2, 200px);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 200px);
         grid-template-areas: 
-       "personalC airC"
-        "smartP smartP"
-        ""
-        ;
-        gap: 10px;
+        "a a"
+        "b d"
+        "c c"
+        "e f"
+        !important;
+        gap: 5px;
     }
-} */
+}
+@media (max-width:416px) {
+    .category_btn{
+        font-size: 12px;
+    }
+}
