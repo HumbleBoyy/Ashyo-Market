@@ -3,8 +3,8 @@ import { UserIconC } from "@/assets";
 
 const Comments = () => {
   const date = new Date()
-  const commentsDate = `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`;
-
+  const commentsDate = `${date.toLocaleString('default', { month: 'long' })} ${date.getDate()}, ${date.getFullYear()}`
+  
   const comments:{
     id: number
     userName: string

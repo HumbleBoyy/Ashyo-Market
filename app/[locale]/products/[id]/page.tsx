@@ -17,7 +17,7 @@ import { IoStorefrontSharp } from 'react-icons/io5'
 
 const Product = () => {
     const formatNumber = (num: number | null | undefined) => {
-        if (num === null || num === undefined) return "N/A"; // Handle invalid numbers
+        if (num === null || num === undefined) return "N/A"; 
         return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     };
     const {id} = useParams()

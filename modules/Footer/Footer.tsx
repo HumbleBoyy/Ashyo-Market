@@ -1,7 +1,6 @@
 import { AppStore, FaceBook, Play, Skype, Telegram, YouTube } from "@/assets"
 import { ReactNode } from "react"
 import { useTranslations } from "use-intl"
-import Instagram from "../../public/Insta.svg"
 import { Link } from "@/i18n/navigation"
 import { IoChatboxEllipsesOutline } from "react-icons/io5"
 
