@@ -4,7 +4,6 @@ import {  Autoplay, Pagination, Navigation } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-
 import './styles.css';
 import { BannerType } from "@/types/BannerType";
 import Image from "next/image";

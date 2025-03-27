@@ -35,7 +35,6 @@ const HeaderSearchMobile = () => {
      })
   },[name])
 
-  console.log(categorySearchData)
 
   const handleSearchClick = (data:string)=> {
      setValue(data)

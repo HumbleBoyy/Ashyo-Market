@@ -1,6 +1,5 @@
 import {MainLogo } from "@/assets"
 import { Link } from "@/i18n/navigation"
-import { useTranslations } from "next-intl"
 import HeaderSearch from "./HeaderSearch/HeaderSearch"
 import HeaderNotification from "./HeaderNotification/HeaderNotification"
 import Menu from "./NavMenu/Menu"
@@ -10,7 +9,6 @@ import HeaderCategory from "./HeaderCategory"
 
 
 const HeaderMiddle = () => {
-const t = useTranslations('Header')
   return (
     <div className='containers relative flex flex-col py-1 px-1'>
         <div className="flex items-center justify-between">
