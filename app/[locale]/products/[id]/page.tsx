@@ -14,6 +14,7 @@ import { FaRegHeart } from 'react-icons/fa'
 import { FaScaleUnbalanced, FaTruckFast } from 'react-icons/fa6'
 import { IoMdTime } from 'react-icons/io'
 import { IoStorefrontSharp } from 'react-icons/io5'
+import "../style.css"
 
 const Product = () => {
     const formatNumber = (num: number | null | undefined) => {
@@ -30,17 +31,27 @@ const Product = () => {
 
   return (
   <>
-       <div className='containers py-[50px]'>
-       <h2 className='font-bold text-[32px]'>{singleData.name}</h2>
-       <div className='flex items-center gap-[32px]'>
-           <div className='relative flex justify-center items-center mt-[30px] w-[530px] h-[430px] bg-[#EBEFF3] rounded-[10px]'>
-              <Image src={`${IMAGE_API}/${singleData.image}`} alt={`${singleData.name}`} width={340} height={340} priority/>
-              <div className='absolute text-[24px] text-[#5F728B] font-light top-[25px] right-[30px] flex gap-[20px]'>
-                <FaScaleUnbalanced className='cursor-pointer'/>
-                <FaRegHeart className='cursor-pointer' />
-              </div>
-           </div>
-           <div className='flex flex-col gap-[35px]'>
+   <div className='containers flex flex-col py-[50px] px-[5px] sm:px-[10px]'>
+  <div className='single_page'>
+   <div className='flex flex-col'>
+      <h2 className='font-bold text-[32px]'>{singleData.name}</h2>
+      <div className='relative singLepage_image_wrapper flex justify-center items-center mt-[30px] w-[550px] h-[430px] bg-[#EBEFF3] rounded-[10px]'>
+         <Image 
+            src={`${IMAGE_API}/${singleData.image}`} 
+            alt={`${singleData.name}`} 
+            width={340} 
+            height={340} 
+            priority
+            className="object-contain" 
+         />
+         <div className='absolute text-[24px] text-[#5F728B] font-light top-[25px] right-[30px] flex gap-[20px]'>
+            <FaScaleUnbalanced className='cursor-pointer'/>
+            <FaRegHeart className='cursor-pointer' />
+         </div>
+      </div>
+      
+      </div>
+       <div className='price_shipping_div flex flex-col gap-[35px]'>
               <h3 className='text-[32px] font-bold text-[#06172D] flex items-baseline gap-[10px]'><span className='text-[16px] text-[#515D6C] font-normal'>{t("price")}</span>{formatNumber(singleData.price)} <span className='!text-[24px]'>UZS</span></h3>
               <div className='flex flex-col gap-[10px]'>
                  <div className='flex items-center justify-center w-[475px] h-[55px] rounded-[6px] bg-[#EBEFF3]'>
@@ -56,16 +67,15 @@ const Product = () => {
                  <p className='text-[16px] flex gap-[15px] items-center font-normal text-[#06172DB2]'><IoStorefrontSharp />{t("fromStore")}</p>
                  <p className='text-[16px] flex gap-[15px] items-center font-normal text-[#06172DB2]'><IoMdTime/>{t("deliveryTime")}</p>
               </div>
-           </div>
-       </div>
-
+      </div>
+   </div>   
+      <div className='features_wrapper flex flex-col'>
        <div className='flex items-center gap-[80px] mb-[40px] mt-[80px]'>
           <strong onClick={()=> setVariationActive("features")} className={` ${variationACtive === "features" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"} cursor-pointer`}>{t("features")}</strong>
           <strong onClick={()=> setVariationActive("comments")} className={` ${variationACtive === "comments" ? "font-bold" : "text-[18px] font-normal text-[#515D6C]"} cursor-pointer`}>{t("opinion")}</strong>
        </div>
-       <div>
         {variationACtive === "features" ? <Features id={id}/> : <Comments/>}
-       </div>
+       </div>   
     </div>
     <ProductsSecond/>
     <Footer/>
