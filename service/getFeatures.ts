@@ -1,13 +1,13 @@
 import { instance } from "@/hooks/instance"
 import { useQuery } from "@tanstack/react-query"
 
-const getProducts = () => {
+const getFeatures = (id:string | undefined) => {
     const {data = [], isLoading} = useQuery({
-        queryKey:['products'],
-        queryFn:()=> instance().get("/products").then(res => res.data.items)
+        queryKey:['variations', id],
+        queryFn:()=> instance().get(`/variations/${id}`).then(res => res.data.items)
     })
     
     return {data, isLoading}
 }
 
-export default getProducts
+export default getFeatures
